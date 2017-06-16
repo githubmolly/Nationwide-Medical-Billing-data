@@ -1,6 +1,6 @@
-libname AHA 'R:\Data\Open\AHA';
-libname NJ 'R:\Data\Encrypted\HCUP\NJ';
-libname markt 'R:\Core\DataCore\PanT\Value\Office of Value Management\Data Request\Vijay Nair\20150918_NJ 2013 HCUP';
+libname AHA 'xxx';
+libname NJ 'xxx';
+libname markt 'xxx';
 
 %macro HCUP_MARKT_MERGE(state,year);
 	PROC SQL;
@@ -125,7 +125,7 @@ libname markt 'R:\Core\DataCore\PanT\Value\Office of Value Management\Data Reque
 %MACRO HCUP_MARKT_OUTPUT(STATE,YEAR);
 
 PROC EXPORT	DATA=work.HCUP_&state.&year._excel
-	OUTFILE="R:\Core\DataCore\PanT\Value\Office of Value Management\Data Request\Vijay Nair\20150918_NJ 2013 HCUP\HCUP_&state.&year._inpatient.xlsx"
+	OUTFILE="xxx\HCUP_&state.&year._inpatient.xlsx"
 	DBMS=excel
 	label 
 	REPLACE;
