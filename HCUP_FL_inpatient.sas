@@ -1,6 +1,6 @@
-libname AHA 'D:\Health Services\SAS Dataset\AHA';
-libname FL 'D:\Health Services\SAS Dataset\FL';
-libname markt 'D:\Health Services\Yile\MARKT HCUP\dataset';
+libname AHA 'xxx';
+libname FL 'xxx';
+libname markt 'xxx';
 
 %macro HCUP_MARKT_MERGE(state,year);
 	PROC SQL;
@@ -114,7 +114,7 @@ libname markt 'D:\Health Services\Yile\MARKT HCUP\dataset';
 %MACRO HCUP_MARKT_OUTPUT(STATE,YEAR);
 
 PROC EXPORT	DATA=work.HCUP_&state.&year._excel
-	OUTFILE="D:\Health Services\Yile\MARKT HCUP\HCUP_&state.&year._inpatient.xlsx"
+	OUTFILE="xxx\HCUP_&state.&year._inpatient.xlsx"
 	DBMS=excel
 	label 
 	REPLACE;
