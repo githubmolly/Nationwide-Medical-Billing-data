@@ -1,6 +1,6 @@
-libname AHA 'R:\Data\Open\AHA';
-libname NJ 'R:\Data\Encrypted\HCUP\NJ';
-libname markt 'R:\Core\DataCore\PanT\Value\Office of Value Management\Data Request\Vijay Nair\20150918_NJ 2013 HCUP';
+libname AHA 'xxx';
+libname NJ 'xxx';
+libname markt 'xxx';
 options mprint;
 
 *******************************************************
